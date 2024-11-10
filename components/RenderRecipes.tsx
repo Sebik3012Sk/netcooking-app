@@ -71,7 +71,7 @@ export default function RenderRecipes() {
                 }} key={key} margin={"10px"}>
                     <Typography sx={{margin : "5px"}} variant="h3" color="white">{recipe.recipe_name}</Typography>
                     <Typography sx={{margin : "5px"}} variant="body1" color="white">{recipe.recipe_text}</Typography>
-                    <Button color="warning" sx={{margin : "5px"}} variant="contained" component={Link} prefetch={true} href={`${pathname}/recipe?recipe_id=${recipe.recipe_id}`}>Ukazat Detail</Button>
+                    <Button color="warning" sx={{margin : "5px",bgcolor : "warning.main"}} variant="contained" component={Link} prefetch={true} href={`${pathname}/recipe?recipe_id=${recipe.recipe_id}`}>Ukazat Detail</Button>
                 </Box>
             })}
         </Box>
